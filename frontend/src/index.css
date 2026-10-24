@@ -2,3 +2,7 @@ body {
   margin: 0;
   background: white;
 }
+.nav-link{
+  margin-left: 40px;
+}
+
