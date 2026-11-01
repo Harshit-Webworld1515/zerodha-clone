@@ -5,4 +5,32 @@ body {
 .nav-link{
   margin-left: 40px;
 }
-
+#supportHero{
+  background-color: rgb(56 126 209 );
+  color:#fff;
+}
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+#supportWrapper a{
+text-decoration: none;
+color: #fff;
+}
+.featured a{
+  color: #fff;
+}
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 1rem;
+  border: none;
+  margin-bottom: 0 1rem;
+  margin-top: 1rem;
+}
+.anchor{
+  color: #fff;
+  margin: 16px;
+}
