@@ -13,12 +13,12 @@ import WatchList from "./WatchList";
 const Dashboard = () => {
   return (
     <div className="dashboard-container">
-      
-        <WatchList />
-      
+
+      <WatchList />
+
       <div className="content">
         <Routes>
-          <Route exact path="/" element={<Summary />} />
+          <Route path="/" element={<Summary />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/holdings" element={<Holdings />} />
           <Route path="/positions" element={<Positions />} />
