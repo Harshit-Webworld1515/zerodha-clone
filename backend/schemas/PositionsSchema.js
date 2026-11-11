@@ -9,4 +9,4 @@ const PositionsSchema= new Schema({
     day: String,
     isLoss: Boolean,
 })
-module.exports= require(PositionsSchema);
+module.exports= PositionsSchema;
