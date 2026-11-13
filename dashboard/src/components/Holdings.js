@@ -1,6 +1,25 @@
-import React from "react";
-import { holdings } from "../data/data";
+import {useState,useEffect} from "react";
 const Holdings = () => {
+
+  const [allHoldings, setAllHoldings]=useState([]);
+
+  useEffect(() => {
+    const fetchHoldings = async () => {
+      try {
+        const response = await fetch("http://localhost:5000/allHoldings");
+        const data = await response.json();
+        setAllHoldings(data);
+      } catch (error) {
+        console.error("Error fetching holdings:", error);
+      }
+    };
+
+    fetchHoldings();
+  }, []);
+
+  const holdings = allHoldings;
+  
+
   return (
     <>
       <h3 className="title">Holdings ({holdings.length})</h3>
