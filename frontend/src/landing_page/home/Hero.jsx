@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 function Hero() {
     return (
@@ -13,8 +14,10 @@ function Hero() {
                     <button
                         className="btn btn-primary fs-5 p-2"
                         style={{ width: "25%" }}
-                    >
-                        Signup now
+                        >
+                        <Link to="/signup" style={{ textDecoration: "none", color: "white" }}>
+                            Signup now
+                        </Link>
                     </button>
                 </div>
             </div>

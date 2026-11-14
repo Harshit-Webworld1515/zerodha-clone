@@ -1,10 +1,25 @@
 import React from 'react'
+import { useNavigate } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
 function CreateTicket() {
+     const navigate = useNavigate();
+    const [cookies, removeCookie] = useCookies([]);
+
+    const Logout = () => {
+        removeCookie("token");
+        navigate("/signup");
+    };
+
     return (
         <div className="container">
             <div className="row P-5 mt-5 mb-5">
-                <h1 className='fs-2'>To create a ticket, select a relevant topic</h1>
+                <div className="d-flex justify-content-between align-items-center">
+                    <h1 className='fs-2'>To create a ticket, select a relevant topic</h1>
+                    <button className="btn btn-outline-primary" onClick={Logout}>
+                        Sign Out
+                    </button>
+                </div>
                 <div className="col-4 p-5">
                     <h4 className="fs-3 mb-5 text-muted">
                         <i className="fa-solid fa-circle-plus fs-6"></i> Account Opening </h4>
