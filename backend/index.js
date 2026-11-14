@@ -1,6 +1,14 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cors = require("cors");
+const authRoute = require("./routes/AuthRoute");
+const cookieParser = require("cookie-parser");
+
+app.use(cors());
+app.use(express.json());
+app.use(cookieParser());
+app.use("/", authRoute);
 
 require("dotenv").config();
 
@@ -48,6 +56,25 @@ const uri = process.env.MONGODB_URI;
 //     res.send("Positions added successfully");
 // });
 
+app.get("/allHoldings", async (req, res) => {
+    const HoldingsModel = require("./model/HoldingsModel");
+    try {
+        const allHoldings = await HoldingsModel.find();
+        res.json(allHoldings);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+});
+
+app.get("/allPositions", async (req, res) => {
+    const PositionsModel = require("./model/PositionsModel");
+    try {
+        const allPositions = await PositionsModel.find();
+        res.json(allPositions);
+    } catch (err) {
+        res.status(500).json({ message: err.message });
+    }
+}); 
 app.listen(PORT, async () => {
     console.log(`Server is running on port ${PORT}`);
 
