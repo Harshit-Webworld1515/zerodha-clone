@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { PolarAreachart } from "./PolarAreachart";
 // import { positions } from "../data/data";
 
 const Positions = () => {
@@ -13,10 +14,27 @@ const Positions = () => {
     fetchPosition();
   }, [])
   const positions = allPosition;
+  const data = {
+  labels: positions.map((position) => position.name),
+  datasets: [
+    {
+      label: 'Price',
+      data: positions.map(( stock) =>stock.price),
+      backgroundColor: [
+        'rgba(255, 99, 132, 0.5)',
+        'rgba(54, 162, 235, 0.5)',
+        'rgba(255, 206, 86, 0.5)',
+        'rgba(75, 192, 192, 0.5)',
+        'rgba(153, 102, 255, 0.5)',
+        'rgba(255, 159, 64, 0.5)',
+      ],
+      borderWidth: 1,
+    },
+  ],
+}
   return (
     <>
       <h3 className="title">Positions ({positions.length})</h3>
-
       <div className="order-table">
         <table>
           <tr>
@@ -54,6 +72,7 @@ const Positions = () => {
           })}
         </table>
       </div>
+      <PolarAreachart data={data} />
     </>
   );
 };
