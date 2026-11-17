@@ -27,6 +27,4 @@ function Hero() {
         </section>
     );
 }
-// https://github.com/apna-college/zerodha-clone/tree/21-creating-dashboard-components/dashboard/src/components
-
 export default Hero;

@@ -11,7 +11,7 @@ const Signup = () => {
     username: "",
   });
   const { email, password, username } = inputValue;
-  const handleOnChange = (e) => {   
+  const handleOnChange = (e) => {
     const { name, value } = e.target;
     setInputValue({
       ...inputValue,
@@ -42,7 +42,7 @@ const Signup = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          navigate("/");
+          window.location.href = "http://localhost:3000";
         }, 1000);
       } else {
         handleError(message);
