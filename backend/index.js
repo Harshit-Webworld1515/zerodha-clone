@@ -5,8 +5,12 @@ const cors = require("cors");
 const authRoute = require("./routes/AuthRoute");
 const cookieParser = require("cookie-parser");
 
-app.use(cors());
-app.use(express.json());
+app.use(
+  cors({
+    origin: ["http://localhost:5173", "http://localhost:3000"],
+    credentials: true,
+  })
+);app.use(express.json());
 app.use(cookieParser());
 app.use("/", authRoute);
 
