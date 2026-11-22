@@ -21,7 +21,7 @@ const ProtectedRoute = () => {
   if (isAuthenticated === null) return <h2>Loading...</h2>;
 
   if (!isAuthenticated) {
-    window.location.href = "https://zerodha-clone-by69.vercel.app/login";
+    window.location.href = "https://zerodha-clone-by69.vercel.app/#/login";
     return <h2>Redirecting...</h2>;
   }
 
