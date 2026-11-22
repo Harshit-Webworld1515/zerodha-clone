@@ -43,7 +43,7 @@ const Login = () => {
       if (success) {
         handleSuccess(message);
         setTimeout(() => {
-          window.location.href = window.location.href = "https://zerodha-clone-tl2i-eight.vercel.app";;
+          window.location.href = "https://zerodha-clone-tl2i-eight.vercel.app";
         }, 1000);
       } else {
         handleError(message);
