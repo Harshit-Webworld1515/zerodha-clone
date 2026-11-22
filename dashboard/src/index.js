@@ -9,7 +9,7 @@ const ProtectedRoute = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/", {
+    fetch("https://zerodha-clone-backend-2mr0.onrender.com/", {
       method: "POST",
       credentials: "include",
     })
@@ -21,7 +21,7 @@ const ProtectedRoute = () => {
   if (isAuthenticated === null) return <h2>Loading...</h2>;
 
   if (!isAuthenticated) {
-    window.location.href = "http://localhost:5173/login";
+    window.location.href = "https://zerodha-clone-by69.vercel.app/login";
     return <h2>Redirecting...</h2>;
   }
 

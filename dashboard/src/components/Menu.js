@@ -16,7 +16,7 @@ const Menu = () => {
   }
   const Logout = () => {
         removeCookie("token");
-        window.location.href = "http://localhost:5173/login";
+        window.location.href = "https://zerodha-clone-by69.vercel.app/login";
     };
 
   const menuClass = "menu";
