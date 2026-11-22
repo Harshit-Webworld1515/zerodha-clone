@@ -7,10 +7,16 @@ const cookieParser = require("cookie-parser");
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:3000"],
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:3000",
+      "https://zerodha-clone-tl2i-eight.vercel.app",
+      "https://zerodha-clone-by69.vercel.app",
+    ],
     credentials: true,
   })
-);app.use(express.json());
+);
+app.use(express.json());
 app.use(cookieParser());
 app.use("/", authRoute);
 
