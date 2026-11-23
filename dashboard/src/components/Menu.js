@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useCookies } from "react-cookie";
 
 
 const Menu = () => {
   const [selectedMenu, setSelectedMenu] = useState(0);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
-      const [, removeCookie] = useCookies([]);
   const handleMenuClick = (index) => {
     setSelectedMenu(index);
   }
@@ -14,10 +12,14 @@ const Menu = () => {
   const handleProfileClick = () => {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   }
-  const Logout = () => {
-        removeCookie("token");
-        window.location.href = "https://zerodha-clone-by69.vercel.app/login";
-    };
+  const Logout = async () => {
+    await fetch("https://zerodha-clone-backend-2mr0.onrender.com/logout", {
+      method: "POST",
+      credentials: "include",
+    });
+
+    window.location.href = "https://zerodha-clone-by69.vercel.app/#/login";
+  };
 
   const menuClass = "menu";
   const activeMenuClass = "menu selected"
@@ -56,9 +58,9 @@ const Menu = () => {
               <p className={selectedMenu === 5 ? activeMenuClass : menuClass}>Apps</p>
             </Link>
           </li>
-      <button className="btn btn-outline-primary" onClick={Logout}> 
-        Sign Out
-      </button>
+          <button className="btn btn-outline-primary" onClick={Logout}>
+            Sign Out
+          </button>
         </ul>
         <hr />
         <div className="profile" onClick={handleProfileClick}>
