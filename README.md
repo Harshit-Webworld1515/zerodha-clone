@@ -113,37 +113,37 @@ Screenshots below showcase the major sections of the application.
 ### Landing Page
 
 <p align="center">
-  <img src="screenshots/landing-page.png" width="90%" alt="Zerodha Clone Landing Page"/>
+  <img src="[screenshots/landing-page.png](https://github.com/user-attachments/assets/3c952492-9ebb-4f5d-b8cc-2b55f97e9320)" width="90%" alt="Zerodha Clone Landing Page"/>
 </p>
 
 ### Authentication
 
 <p align="center">
-  <img src="screenshots/login.png" width="45%" alt="Login Page"/>
+  <img src="https://github.com/user-attachments/assets/0e491c29-d782-4164-b35c-8fdaffd66e34" width="45%" alt="Login Page"/>
   &nbsp;
-  <img src="screenshots/signup.png" width="45%" alt="Signup Page"/>
+  <img src="https://github.com/user-attachments/assets/89448e53-c69c-415e-85fb-ff3851b0df35" width="45%" alt="Signup Page"/>
 </p>
 
 ### Dashboard
 
 <p align="center">
-  <img src="screenshots/dashboard.png" width="90%" alt="Trading Dashboard"/>
+  <img src="https://github.com/user-attachments/assets/a3dd73ef-ed30-479c-a5a5-0952729cf326" width="90%" alt="Trading Dashboard"/>
 </p>
 
 ### Holdings & Positions
 
 <p align="center">
-  <img src="screenshots/holdings.png" width="90%" alt="Holdings"/>
+  <img src="https://github.com/user-attachments/assets/89ca3e4e-acbb-482c-9e75-d8457b4bd498" width="90%" alt="Holdings"/>
 </p>
 
 <p align="center">
-  <img src="screenshots/positions.png" width="90%" alt="Positions"/>
+  <img src="https://github.com/user-attachments/assets/dbf6e2cc-4638-4aca-bb96-1f12a4a5eadf" width="90%" alt="Positions"/>
 </p>
 
 ### Watchlist
 
 <p align="center">
-  <img src="screenshots/watchlist.png" width="90%" alt="Stock Watchlist"/>
+  <img src="https://github.com/user-attachments/assets/f99a3fe1-4b2c-4d2a-abbe-b0135a2f520a" width="90%" alt="Stock Watchlist"/>
 </p>
 
 ---
