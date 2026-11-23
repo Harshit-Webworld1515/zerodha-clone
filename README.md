@@ -113,7 +113,7 @@ Screenshots below showcase the major sections of the application.
 ### Landing Page
 
 <p align="center">
-  <img src="[screenshots/landing-page.png](https://github.com/user-attachments/assets/3c952492-9ebb-4f5d-b8cc-2b55f97e9320)" width="90%" alt="Zerodha Clone Landing Page"/>
+  <img src="https://github.com/user-attachments/assets/3c952492-9ebb-4f5d-b8cc-2b55f97e9320" width="90%" alt="Zerodha Clone Landing Page"/>
 </p>
 
 ### Authentication
